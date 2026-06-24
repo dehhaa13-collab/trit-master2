@@ -69,19 +69,7 @@
     reveals.forEach(el => el.classList.add('visible'));
   }
 
-  /* ── Highlight bar animation ── */
-  const highlightBar = document.getElementById('highlight-bar');
-  if (highlightBar) {
-    const hlObs = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          setTimeout(() => e.target.classList.add('revealed'), 400);
-          hlObs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.5 });
-    hlObs.observe(highlightBar);
-  }
+
 
   /* ── Dot Navigation active state ── */
   const dots = document.querySelectorAll('.dot[data-section]');
