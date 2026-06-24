@@ -1537,15 +1537,15 @@
   }
 
   .hero-badges {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0.5rem;
   }
 
   .hero-badge {
-    font-size: 0.78rem;
-    padding: 0.4em 1.2em;
-    width: fit-content;
+    font-size: 0.75rem;
+    padding: 0.4em 1em;
   }
 
   .hero-eyebrow {
